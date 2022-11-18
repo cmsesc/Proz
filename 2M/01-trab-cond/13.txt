@@ -1,0 +1,15 @@
+Leia 3 valores inteiros e ordene-os em ordem crescente. No final, mostre os valores em ordem crescente
+
+Faça um programa que leia dois inteiros, que representam a idade e o tempo de contribuição de um trabalhador e informe se ele pode se aposentar ou não. Os critérios para
+aposentadoria são:
+• Ter pelo menos 65 anos de idade;
+• Ou ter trabalhado pelo menos 30 anos;
+• Ou ter pelo menos 60 anos e trabalhado pelo menos 25.
+
+
+Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos seguintes intervalos ([0,25], (25,50], (50,75], (75,100]) este valor se encontra. Obviamente se o valor não estiver em nenhum destes intervalos, deverá ser impressa a mensagem “Fora de intervalo”.
+
+
+//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+
+
