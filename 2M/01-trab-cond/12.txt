@@ -1,5 +1,50 @@
 Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante
 
+Algoritmo "Verificador de VOGAL e CONSOANTE"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : 
+// Descrição   : Verifica se a letra digitada e VOGAL ou CONSOANTE
+// Autor(a)    : MATHEUS DE SOUZA PINTO
+// Data atual  : 18/11/2022
+Var
+   // Seção de Declarações das variáveis
+   v1,v2,v3,v4,v5, ltr: caractere
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   v1 <- "a"
+   v2 <- "e"
+   v3 <- "i"
+   v4 <- "o"
+   v5 <- "u"
+
+   escreval(" Seja bem vindo estudante ou professor, este e um simples programa ")
+   escreval("que verifica se a letra digitada e CONSOANTE ou VOGAL")
+   escreval("")
+   escreval("OBS:(Por favor digite apenas uma letra!")
+   escreval("")
+   escreval("")
+   escreva("Digite uma letra: ")
+
+   leia(ltr)
+
+   escreval("")
+   se (ltr = v1) ou (ltr = v2) ou (ltr = v3) ou (ltr = v4) ou (ltr = v5) entao
+      escreval("|------------------------|")
+      escreval("| Esta letra e uma VOGAL |")
+      escreval("|------------------------|")
+   senao
+      escreval("|----------------------------|")
+      escreval("| Esta letra e uma CONSOANTE |")
+      escreval("|----------------------------|")
+   fimse
+
+
+
+Fimalgoritmo
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Faça um programa que leia três números e mostre-os em ordem decrescente
 
 Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
