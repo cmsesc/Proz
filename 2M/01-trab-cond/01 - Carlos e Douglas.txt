@@ -17,7 +17,7 @@ Lembre-se a base maior e a base menor devem ser numeros maiores que zero.
 
 //RESPOSTA:::::::::::::::::::::::::::::::::
 
-Algoritmo "semnome"
+Algoritmo "ATIVIDADE 1"
 //
 //
 // Descrição   : O programa faz adição e apresenta valores, também calcula área do trapézio
