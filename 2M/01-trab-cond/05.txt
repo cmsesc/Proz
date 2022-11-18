@@ -1,20 +1,197 @@
-Leia o salario de um trabalhador e o valor da prestacao de um emprestimo. Se a 
+1) Leia o salario de um trabalhador e o valor da prestacao de um emprestimo. Se a 
 prestacao for maior que 20% do sal ˜ ario imprima: Emprestimo nao concedido, caso
 contrario imprima: Emprestimo concedido.
 
-Fac¸a um programa para verificar se um determinado numero inteiro e divisıvel por 3 ou
+Algoritmo "EMPRESTIMO MAIOR QUE 20% NÃO CONCEDIDO"
+//PROGRAMADORES: JOÃO VICTOR ALVES DE JESUS E MATHEUS BATISTA
+//ENTRADA: SALARIO, EMPRÉSTIMO
+//PROCESSAMENTO: CALCULA 20% DO SALÁRIO
+//SAIDA:INFORMA SE O EMPRESTIMO FOI APROVADO OU NÃO
+Var
+// Seção de Declarações das variáveis 
+salario, emprestimo: real
+porcentagem: real
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+escreva ("Digite seu salário:")
+leia (salario)
+
+Escreva("Valor do empréstimo:")
+leia(emprestimo)
+
+porcentagem<- salario*20/100
+
+se (emprestimo>porcentagem) entao
+Escreval ("Você não pode fazer um empréstimo R$", emprestimo)
+
+senao
+
+escreva ("Empréstimo concedido no valor de R$", porcentagem)
+
+fimse
+Fimalgoritmo
+
+
+2) Fac¸a um programa para verificar se um determinado numero inteiro e divisıvel por 3 ou
 5, mas nao simultaneamente pelos dois.
 
+LINGUAGEM DE PROGRAMAÇÃO: PORTUGOL
 
-Uma empresa paga a seus funcionários R$ 1,00 de comissão para cada produto vendido,
+Algoritmo "NUMERO DIVISIVEL POR 3"
+//PROGRAMADORES: JOÃO VICTOR ALVES DE JESUS E MATHEUS BATISTA
+//ENTRADA: Numero desejavel
+//PROCESSAMENTO: (numeroA%3<>0) e  (numeroA%5=0)
+//SAIDA: DESCOBRE SE O NUMERO É DIVISIVEL POR 3 OU 5
+Var
+   // Seção de Declarações das variáveis
+
+   numeroA,numeroB: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   escreva ("Digite o valor que deseja descobrir se é divisivel por 3:")
+   leia (numeroA)
+
+   se (numeroA%3=0) entao
+      escreval ("Esse número é divisivel por 3")
+   senao
+      se (numeroA%3<>0) entao
+         escreval ("Esse número não é diviísivel por 3")
+      fimse
+   fimse
+
+   escreva ("Digite o valor que deseja descobrir se é divisivel por 5:")
+   leia (numeroB)
+
+   se (numeroA%5=0) entao
+      escreval ("Esse número é divisivel por 5")
+   senao
+      se (numeroA%5<>0) entao
+         escreval ("Esse número não é diviísivel por 5")
+
+
+      fimse
+   fimse
+Fimalgoritmo
+
+
+
+
+3) Uma empresa paga a seus funcionários R$ 1,00 de comissão para cada produto vendido,
 entretanto, se forem vendidos mais de 250 produtos, o valor aumenta para R$ 1,50. Se a
 quantidade for superior a 500 produtos, o valor da comissão sobe para R$ 2,00. Monte um
 programa para ler o nome de um funcionário e a quantidade de produtos que ele vendeu.
 Exiba o nome do funcionário e o total de comissão que ele vai receber
 
-Crie um algoritmo que após receber o Salário Bruto, calcule o salário líquido descontando 10% quando o salário bruto for menor que R$ 2000, caso contrário descontar 20%. No final, exiba o salário líquido
+Algoritmo "COMISSÃO"
+//PROGRAMADORES: JOÃO VICTOR ALVES DE JESUS E MATHEUS BATISTA
+//ENTRADA: PRODUTOS VENDIDOS
+//PROCESSAMENTO: IDENTIFICAR QUANTO DEVE GANHAR DE COMISSÃO
+//SAIDA:QUANTO GANHOU DE CIMISSÃO
+Var
+   // Seção de Declarações das variáveis
+   nome:caracter
+   produtovendidos, comissao, comissaoamais: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreva("Digite seu  nome:")
+   leia (nome)
+
+   Escreva ("Digite o número de produtos vendidos:")
+   leia (produtovendidos)
+
+   comissao<-produtovendidos*1
+   comissaoamais<-comissao*(1+0.50)
+   // LÓGICA CERTA POREM ACONTECE UM ERRO/BUG DO VISUAL G PROCURAR UM "ENTAO"
+   se(produtovendidos<=250) entao
+
+      escreval("|" nome, " ,você receberá uma comissão de R$", comissao)
+   senao
+
+      se(produtosvendidos>250) entao
+
+         escreval("Parabéns! Você receberá uma comissão a mais de R$", comissaoamais)
+
+      fimse
+   fimse
+Fimalgoritmo
+
+
+4)Crie um algoritmo que após receber o Salário Bruto, calcule o salário líquido descontando 10% quando o salário bruto for menor que R$ 2000, caso contrário descontar 20%. No final, exiba o salário líquido
+
+Algoritmo "SALÁRIO BRUTO E LIQUIDO"
+//PROGRAMADORES: JOÃO VICTOR ALVES DE JESUS E MATHEUS BATISTA
+//ENTRADA: SALARIO
+//PROCESSAMENTO: CALCULAR PORCENTAGEM QUE DEVE SER DESCONTADA
+//SAIDA: ENTREGAR PARA O USUARIO SEU SALÁRIO LIQUIDO COM DESCONTO
+Var
+   // Seção de Declarações das variáveis
+
+   salario, calculo, porcentagem: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   escreva("Digite o valor do seu salário bruto:")
+   leia (salario)
+
+   se (salario<=2000) entao
+
+      calculo <-salario*10/100
+
+      Escreval ("Seu salário liquido é de R$", salario - calculo)
+      escreval("Desconto de R$", calculo)
+
+   senao
+      se  (salario>2000) entao
+
+         calculo <-salario*20/100
+
+         Escreval ("Seu salário liquido é de R$", salario - calculo)
+         escreval("Desconto de R$", calculo)
+
+
+      fimse
+   fimse
+
+
+Fimalgoritmo
+
 
 
 
 //Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+
+Algoritmo "DESENVOLVA UMA FORMULA MATEMATIA, RAIO E AREA DO CIRCULO"
+//PROGRAMADORES: JOÃO VICTOR ALVES DE JESUS E MATHEUS BATISTA
+//ENTRADA: RAIO
+//PROCESSAMENTO: CALCULAR A AREA E O PERIMETRO
+//SAIDA:AREA E PERIMETRO
+Var
+   // Seção de Declarações das variáveis
+  raio, perimetro, area : real
+  
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+ escreval ("Qual o raio do circulo?")
+ leia (raio)
+ 
+ 
+ perimetro<- 2*pi*raio
+ 
+ area<-pi*raio^2
+ 
+ Escreva ("Perimetro é: ", perimetro, "e a Área é: ", area)
+ 
+ 
+ 
+ 
+Fimalgoritmo
 
