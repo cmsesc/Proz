@@ -1,0 +1,133 @@
+Escreva um algoritmo em PORTUGOL que receba um número e imprima uma das
+mensagens: “é múltiplo de 3” ou “não é múltiplo de 3”.
+
+Escreva um algoritmo em PORTUGOL para determinar se um número A é divisível
+por um outro número B. Esses valores devem ser fornecidos pelo usuário.
+
+Escreva um algoritmo em PORTUGOL que leia um número e imprima a raiz quadrada
+do número caso ele seja positivo ou igual a zero e o quadrado do número caso ele seja
+negativo.
+
+
+Faça um algoritmo que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo.
+
+
+
+//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+
+
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis 
+ValorDoProdutoCorte: real
+ValorDoProdutoBarba: real
+ValorDoDesconto: real
+CalculoDoDesconto: real
+ValorPagar: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval ("Seja Bem-vindo a Barber D'Crias.")
+ escreva ("ValorDoProdutoCorte: ")
+ leia (ValorDoProdutoCorte)
+  escreva ("ValorDoProdutoBarba: ")
+ leia (ValorDoProdutoBarba)
+ escreva ("ValorDoDesconto: ")
+ leia (ValorDoDesconto)
+ CalculoDoDesconto <- ValorDoProdutoBarba + ValorDoProdutoCorte * ValorDoDesconto / 100
+ ValorPagar <- ValorDoProdutoBarba + ValorDoProdutoCorte - CalculoDoDesconto
+ escreval ("O valor total a pagar: ",ValorPagar)
+
+Fimalgoritmo
+
+
+
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis 
+numero: inteiro
+c,d,u: inteiro
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva (" Informe o número: ")
+leia (numero)
+escreval (" Unidades: ",Int (numero / 1))
+escreval (" Dezenas: ",Int (numero / 10 ))
+escreval (" Centenas: ",Int (numero / 100 ))
+
+Fimalgoritmo
+
+
+
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis 
+numum: real
+numdois: real
+resultado: real
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva ( " Informe o primeiro numero: ")
+leia (numum)
+escreva ( " Informe o segundo numero: ")
+leia (numdois)
+resultado <- numum + numdois
+escreval( " O resultado é: ",resultado)
+se (resultado > 0) entao
+escreval ( " a raiz quadrada de: ",RaizQ (resultado))
+senao
+escreva ( " o numero elevado ao quadrado e de: ",(resultado^2))
+
+fimse
+
+Fimalgoritmo
+Algoritmo "Divisível"
+// Professor   : Cleberson
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Andrey David, Richard Lucas
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis 
+a,b :inteiro
+resultado: real
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  escreva("Informe o valor de A: ")
+  leia (a)
+  escreva("Informe o valor de B: ")
+  leia (b)
+  resultado <- a / b
+  escreva(" o valor de a / b : ")
+  escreval(resultado:5:2)
+  
+
+  se ((resultado) mod 2 = 0) entao
+  escreva ("O número ", a," é divisível pelo número ", b)
+  senao
+  escreva ("O número ",a ," NÃO é divisível pelo número " ,b)
+  fimse
+Fimalgoritmo
+
+
+
