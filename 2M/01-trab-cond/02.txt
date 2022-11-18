@@ -1,0 +1,16 @@
+Escreva um algoritmo em PORTUGOL que receba um número e imprima uma das
+mensagens: “é múltiplo de 3” ou “não é múltiplo de 3”.
+
+Escreva um algoritmo em PORTUGOL para determinar se um número A é divisível
+por um outro número B. Esses valores devem ser fornecidos pelo usuário.
+
+Escreva um algoritmo em PORTUGOL que leia um número e imprima a raiz quadrada
+do número caso ele seja positivo ou igual a zero e o quadrado do número caso ele seja
+negativo.
+
+
+Faça um algoritmo que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo.
+
+
+
+//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
