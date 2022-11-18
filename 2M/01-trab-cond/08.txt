@@ -12,3 +12,64 @@ Escreva um programa que pergunte o raio de uma circunferência, e sem seguida mo
 
 
 //Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+
+Algoritmo "soma de dois valores"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis 
+ VALOR1:INTEIRO
+ VALOR2:INTEIRO
+ TOTAL:INTEIRO
+ SOMA: INTEIRO
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreval("escreva o valor 1")
+leia(valor1)
+Escreval("escreva o valor 2")
+leia(valor2)
+total<- valor1 + valor2
+Soma<- total VALOR1 + VALOR2
+escreval("a soma dos valores sao ",SOMA)
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis
+nome1: caracter
+nome2: caracter
+valor1: real
+valor2: real
+total: real
+divisao: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("$$$$$LOJA DE COMPRAS$$$$$")
+escreval("")
+escreval("cliente 1?")
+leia(nome1)
+escreval("cliente 2?")
+leia(nome2)
+escreval("Escreva o valor pago pela sua compra cliente 1:")
+leia(valor1)
+escreval("Escreva o valor pago pela sua compra cliente 2:")
+leia(valor2)
+total <-  valor1 + valor2
+escreval("O valor total dos dois clintes é: R$",total)
+divisao <- total / 2
+escreval("================FICHA DOS CLIENTES==================")
+escreval("A media dos clientes: R$", divisao)
+escreval("NOME DO CLIENTE 1:", nome1, " R$",valor1)
+escreval("NOME DO CLIENTE 2:", nome2, " R$",valor2)
+
+Fimalgoritmo
