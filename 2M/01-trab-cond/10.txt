@@ -18,3 +18,149 @@ aposentar. As condicoes para aposentadoria s ˜ ao˜
 • Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos.
 
 //Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+Algoritmo "valores a e b"
+-----------------------------------------------------------
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : luizphilippe, Rayananjim
+// Data atual  : 18/11/2022
+----------------------------------------------------
+Var
+// Seção de Declarações das variáveis 
+a: inteiro
+b: inteiro
+resultado: inteiro
+---------------------------------------------------
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval(" digite o primeiro numero: ")
+ leia(a)
+ escreval("digite o segundo numero: ")
+ leia(b)
+ resultado <- a*b
+ escreval ("o valor sera:", resultado)
+  se ((a) mod (b)=0) entao
+ escreval("o numero ",a e b," são multiplos ")
+ senao
+ escreval("o numero ",a e b," não são multiplos ")
+ fimse
+-----------------------------------------------------------
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+----------------------------------------------------------------
+Var
+// Seção de Declarações das variáveis
+valor:inteiro
+mes:inteiro
+----------------------------------------------------------------
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+ escreval ("digite um numero de 1 a 12:")
+ leia (valor)
+ se (valor = 1) entao
+ escreva ("janeiro")
+ senao
+ se (valor = 2) entao
+ escreva ("fevereiro")
+ senao
+ se (valor = 3) entao
+ escreva ("março")
+ senao
+ se (valor = 4) entao
+ escreva ("abril")
+ senao
+ se (valor = 5) entao
+ escreva ("maio")
+ senao
+ se (valor = 6) entao
+ escreva ("junho")
+ senao
+ se (valor = 7) entao
+ escreva ("julho")
+ senao
+ se (valor = 8) entao
+ escreva ("agosto")
+ senao
+ se (valor = 9) entao
+ escreva ("setembro")
+ senao
+ se (valor = 10) entao
+ escreva ("outubro")
+ senao
+ se (valor = 11) entao
+ escreva ("novembro")
+ senao
+ se (valor = 12) entao
+ escreva ("dezembro")
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+ fimse
+Fimalgoritmo
+------------------------------------------------------------------------
+Algoritmo "salario"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+-----------------------------------------------------------------------------------------
+Var
+// Seção de Declarações das variáveis 
+salario:real
+x:real
+reajuste:inteiro
+------------------------------------------------------------------------
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval("digite seu salario: ")
+ leia(salario)
+ se (salario < 2000) entao
+ x<-  salario + (salario*(15/100))
+ escreva("seu salario sera", x)
+ senao
+ se (salario>=2000) ou (salario< 5000) entao
+ x<-  salario + (salario*(10/100))
+ escreva("seu salario sera", x)
+ senao
+ x<-  salario + (salario*(5/100))
+ escreva("seu salario sera", x)
+ ----------------------------------------------------------------------
+ Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a) rayan, luiz philippe
+// Data atual  : 14/11/2022
+Var
+// Seção de Declarações das variáveis 
+ps, alt, imc: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  escreval (" calculo de IMC:")
+  escreval(" ")
+  escreval (" digite seu ps em kg:")
+  leia (ps)
+  escreval(" ")
+  escreval(" altura em m:")
+  leia(alt)
+  escreval(" ")
+  imc <- ps/(alt*alt)
+  escreval(" seu indice de (IMC) é:", imc:5:2)
+  
+
+Fimalgoritmo
