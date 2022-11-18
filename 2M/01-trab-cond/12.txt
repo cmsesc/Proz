@@ -47,7 +47,7 @@ Fimalgoritmo
 
 Faça um programa que leia três números e mostre-os em ordem decrescente
 
-Algoritmo "semnome"
+Algoritmo "Programa que ordena 3 numeros em ordem descrescente"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi
 // Descrição   : Lê 3 numeros e os coloca em ordem decrescente
@@ -99,7 +99,7 @@ Inicio
    se (alg3 < alg2) e (alg3 < alg1) entao
       menor <- alg3
 
-      se alg1 <- alg2 entao
+      se alg1 < alg2 entao
          meio <- alg1
          maior <- alg2
       senao
