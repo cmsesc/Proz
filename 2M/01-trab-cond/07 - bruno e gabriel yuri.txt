@@ -1,5 +1,5 @@
 Ler dois valores numéricos e apresentar a diferença do maior pelo menor.
-
+//
 Leia a distancia em ˆ Km e a quantidade de litros de gasolina consumidos por um carro
 em um percurso, calcule o consumo em Km/l e escreva uma mensagem de acordo com
 a tabela abaixo:
@@ -7,15 +7,219 @@ CONSUMO (Km/l) MENSAGEM
 menor que 8 Venda o carro!
 entre 8 e 14 Economico! ˆ
 maior que 12 Super economico!
-
-
+//
 Faça um algoritmo que, dado o valor total em reais e o número de prestações
 desejadas, calcule o valor de cada prestação. O número mínimo de prestações deve
 ser 12. Se o número de prestações for maior ou igual a 24, adicione 10% de juros ao
 valor total, se for maior ou igual a 36, adicione 15% de juros ao valor total.
-
+//
 Sabendo que somente os municípios que possuem mais de 200.000 eleitores têm segundo turno nas eleições para prefeito quando o 1º colocado não obtém mais do que 50% dos votos, crie um algoritmo que leia o nome do município, a quantidade de eleitores e o número de votos do candidato mais votados e informe se terá ou não segundo turno na eleição municipal
-
-
-
+//
 Crie um encunciado e desenvolva um algoreitmo para este, contendo uma fórmula matematica, fisica, finaceira, etc.....
+//
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@|| || || || || || ||@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@\/ \/ \/ \/ \/ \/ \/@@@@@@@@@@@@@@@@
+
+Algoritmo "Trabalho"
+// Professor   : Cleberson
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Gabriel Yuri e Bruno Henrique
+// Data atual  : 18/11/2022
+Var
+   // Seção de Declarações das variáveis
+   xesc: inteiro
+   menu : logico
+
+   //   Ler dois valores numéricos e apresentar a diferença do maior pelo menor.
+   //Entrada: Números a comparar
+   //Processamento: Subtração de valores
+   //Saída: Diferença de valores
+procedimento exercicio1
+var
+   x,y,z:inteiro
+inicio
+   menu <- verdadeiro         //DESABILITA O MENU DE ESCOLHA
+   escreva("Digite o número:")
+   leia(x)
+   escreva("Digite o número:")
+   leia(y)
+   limpatela
+   se (x > y) entao
+      z <- x - y
+   senao
+      z <- y - x
+   fimse
+   escreval("A diferença dos números é: ", z)
+   menu <- falso
+fimprocedimento
+
+// Leia a distancia em ˆ Km e a quantidade de litros de gasolina consumidos por
+//um carro em um percurso, calcule o consumo em Km/l e escreva uma mensagem de
+//acordo com a tabela abaixo:
+//CONSUMO (Km/l) MENSAGEM
+//menor que 8 Venda o carro!
+//entre 8 e 14 Economico! ˆ
+//maior que 12 Super economico!
+//Entrada: Percurso, gasto de combustível
+//Processamento: Cálculo de consumo
+//Saída: Autonomia do veículo
+procedimento exercicio2
+var
+   km,gasolina,consumo: real
+inicio
+   menu <- verdadeiro
+   escreva("Informe a distância (Km):")
+   leia(km)
+   escreva("Informe a quantidade de gasolina gasta no percurso:")
+   leia(gasolina)
+   limpatela
+   consumo <- km / gasolina
+   escreval("Voce teve um autonomia de ",consumo,"km/l nesse percurso")
+   se (consumo < 8) entao
+      escreval("Venda o carro!")
+   senao
+      se (consumo >= 8) e (consumo <= 14) entao
+         escreval("Econômico")
+      senao
+         escreval("Super Economico")
+      fimse
+   fimse
+   menu <- falso
+fimprocedimento
+
+// Faça um algoritmo que, dado o valor total em reais e o número de prestações
+//desejadas, calcule o valor de cada prestação. O número mínimo de prestações
+//deve ser 12.Se o número de prestações for maior ou igual a 24, adicione 10%
+//de juros ao valor total, se for maior ou igual a 36, adicione 15% de juros
+//ao valor total.
+//Entrada: Valor do produto, número de prestações
+//Processamento: Cálculo do valor das prestações e juros adicionados
+//Saída: Valor das parcelas, valor com juros
+procedimento exercicio3
+var
+   valortotal,valorprestacao:real
+   prestacao:inteiro
+inicio
+   menu <- verdadeiro
+
+   escreva("Digite o valor total do produto:")
+   leia(valortotal)
+   enquanto (prestacao < 12) faca
+      escreva("Digite o número de prestações <Minimo 12>:")
+      leia(prestacao)
+   fimenquanto
+   limpatela
+   valorprestacao <- valortotal / prestacao
+   escreval("O número de prestações foi de:", prestacao)
+   escreval("Valor por prestação será de: R$",valorprestacao:5:2)
+
+   menu <- falso
+   se (prestacao >=24) e (prestacao <36) entao
+      escreval("Foi adicionado 10% de juros ao valor final do produto")
+      escreval("O valor final é de: R$",valortotal +(valortotal * (10 /100)):5:2)
+      menu <- falso
+   senao
+      se(prestacao >= 36) entao
+         escreval("Foi adicionado 10% de juros ao valor final do produto")
+         escreval("O valor final é de: R$",valortotal +(valortotal * (15 /100)):5:2)
+         menu <- falso
+      fimse
+   fimse
+fimprocedimento
+
+// Sabendo que somente os municípios que possuem mais de 200.000 eleitores
+//têm segundo turno nas eleições para prefeito quando o 1º colocado não obtém
+//mais do que 50% dos votos, crie um algoritmo que leia o nome do município e
+//a quantidade de eleitores e o número de votos do candidato mais votados e
+//informe se terá ou não segundo turno na eleição municipal.
+//Entrada: Nome do município, número de eleitores, número de votos
+//Processamento: Calculo da porcentagem de votos
+//Saída: Resultado das eleições
+procedimento exercicio4
+var
+   municipio: caracter
+   eleitores,votos:inteiro
+inicio
+   menu <- verdadeiro
+   escreva("Informe o nome do munícipio:")
+   leia(municipio)
+   escreva("Informa o número de eleitores no munícipio:")
+   leia(eleitores)
+   escreva("Informe o número de votos que o candidato mais votado recebeu:")
+   leia(votos)
+   limpatela
+   se (eleitores >= 200000) entao
+      se (votos > eleitores / 2) entao
+         escreval("Candidato eleito no primeiro turno!")
+         menu <- falso
+      senao
+         escreval("Município terá segundo turno!!!")
+         menu <- falso
+      fimse
+   senao
+      escreval("Municipio não elegivel para segundo turno.")
+      escreval("Candidato venceu no 1º turno!!!")
+      menu <- falso
+   fimse
+fimprocedimento
+
+// Realizar um cálculo de juros compostos para investimento.
+//Entrada: VAlor de investimento, taxa de juros, tempo de aplicação
+//Processamento: Cálculo do rendimento dos juros
+//Saída: Valor do rendimento e ganho total
+procedimento exercicio5
+var
+   capital,taxa,montante,juros :real
+   meses: inteiro
+inicio
+   menu <- verdadeiro
+   escreva("Valor a ser investido:")
+   leia(capital)
+   escreva("Taxa de juros:")
+   leia(taxa)
+   escreva("Por quanto tempo <meses> deseja aplicar?")
+   leia(meses)
+   limpatela
+   montante <- capital * (1 + (taxa / 100))^meses
+   juros <- montante - capital
+   escreval("Total investido: R$", capital)
+   escreval("Total ganho em juros: R$", juros:5:2)
+   escreval("Total: R$", montante:5:2)
+   menu <- falso
+fimprocedimento
+
+Inicio
+   //Seção de Comandos, procedimento, funções, operadores, etc...
+   enquanto (menu = falso) faca
+      escreval("Escolha o exercicio")
+      escreval("1..Atividade 1")
+      escreval("2..Atividade 2")
+      escreval("3..Atividade 3")
+      escreval("4..Atividade 4")
+      escreval("5..Atividade 5")
+      escreval("6...SAIR")
+      leia(xesc)
+      escolha xesc
+      caso 1
+         limpatela
+         exercicio1
+      caso 2
+         limpatela
+         exercicio2
+      caso 3
+         limpatela
+         exercicio3
+      caso 4
+         limpatela
+         exercicio4
+      caso 5
+         limpatela
+         exercicio5
+      caso 6
+         limpatela
+         escreval("Obrigado por usar o programa")
+         menu <- verdadeiro
+      fimescolha
+   fimenquanto
+Fimalgoritmo
