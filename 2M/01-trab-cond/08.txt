@@ -1,0 +1,14 @@
+Faça um algoritmo que leia os lados de um triângulo retângulo e exiba sua hipotenusa. Se a hipotenusa for maior que 100 escreva, hipotenusa muito grande, caso contrário exiba hipotenusa pequena
+
+Escreva um algoritmo que leia o nome de dois clientes de uma loja e o valor (em reais) que cada um desses clientes pagou por sua compra.
+O algoritmo deverá escrever: (a) o valor total pago pelos dois clientes; (b) o valor médio
+das compras efetuadas; (c) os nomes dos clientes que efetuaram compras superiores a 20
+reais.
+
+Crie um algoritmo que leia o percurso em quilômetros, o tipo do carro e informe o consumo estimado de combustível, sabendo-se que um carro do tipo C faz 12 KM com um litro de gasolina, um tipo B faz 9 KM e o tipo A faz 8 KM. Caso seja fornecido um tipo de carro inválido o algoritmo deve alertar o fato.
+
+
+Escreva um programa que pergunte o raio de uma circunferência, e sem seguida mostre o diâmetro, comprimento e área da circunferência
+
+
+//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
