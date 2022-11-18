@@ -1,0 +1,12 @@
+Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante
+
+Faça um programa que leia três números e mostre-os em ordem decrescente
+
+Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
+
+Faça um script que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+
+
+
+
+//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
