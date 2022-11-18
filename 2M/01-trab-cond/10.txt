@@ -1,0 +1,20 @@
+Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao Multiplos", indicando se os valores lidos são múltiplos entre si.
+
+Leia um valor inteiro entre 1 e 12, inclusive. Correspondente a este valor, deve ser apresentado como resposta o mês do ano por extenso
+
+
+Leia o salário de um funcionário e calcule o reajuste de acordo com a tabela apresentada.
+Os funcionários de uma empresa sofrerão um reajuste salarial de acordo com a seguinte
+tabela:
+Salário Reajuste
+Menos de 2000.00 15%
+Entre 2000.00 e 5000.00 10%
+Mais que 5000.00 5%
+
+Leia a idade e o tempo de servic¸o de um trabalhador e escreva se ele pode ou nao se ˜
+aposentar. As condicoes para aposentadoria s ˜ ao˜
+• Ter pelo menos 65 anos,
+• Ou ter trabalhado pelo menos 30 anos,
+• Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos.
+
+//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
