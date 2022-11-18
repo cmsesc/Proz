@@ -1,15 +1,169 @@
 Leia 3 valores inteiros e ordene-os em ordem crescente. No final, mostre os valores em ordem crescente
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Algoritmo "Ordem Crescente"
+// Disciplina   : Lógica de Programação
+// Professor   : Cleberson
+// Programa que ordena numeros em ordem crescente
+// Joseph e Marcos
+Var
+   // Variável para reconhecer os números
+   num1, num2 ,num3: inteiro
+   // Variável para ser atribuída aos números e sua ordem
+   menor, meio, maior: inteiro
+
+
+Inicio
+   //tela icial para ler os números
+   escreval("Digite 3 números")
+   leia(num1, num2, num3)
+   limpatela
+   //Condições para ordenar os números em orrdem crescente
+   se ( num1 > num2 ) e (num1 > num3) então
+      maior <- num1
+      se num2 > num3 então
+         meio <- num2
+         menor <- num3
+      senao
+         meio <- num3
+         menor <- num2
+      fimse
+   fimse
+
+   se (num2 > num1) e (num2 > num3 ) então
+      maior <- num2
+      se num1 > num3 então
+         meio <- num1
+         menor <- num3
+      senao
+         meio <- num3
+         menor <- num1
+      fimse
+   fimse
+
+   se (num3 > num1) e (num3 > num2 ) então
+      maior <- num3
+      se num1 > num2 então
+         meio <- num1
+         menor <- num2
+      senao
+         meio <- num2
+         menor <- num1
+      fimse
+   fimse
+   //Tela que mostra o resultado desejado
+   escreval("Menor: " , menor)
+   escreval("Meio: ", meio)
+   escreval("Maior: ", maior)
+
+Fimalgoritmo
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 Faça um programa que leia dois inteiros, que representam a idade e o tempo de contribuição de um trabalhador e informe se ele pode se aposentar ou não. Os critérios para
 aposentadoria são:
 • Ter pelo menos 65 anos de idade;
 • Ou ter trabalhado pelo menos 30 anos;
 • Ou ter pelo menos 60 anos e trabalhado pelo menos 25.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Algoritmo "Previdência"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor   : Cleberson
+// Descrição   : Programa para saber se a pessoa pode se aposentar ou não
+// Autor(a)    : Joseph e Marcos
+// Data atual  : 18/11/2022
+Var
+   // Variável para a idade e tempo contribuído do usuário
+   idade: Inteiro
+   tempoContribuido: Inteiro
+
+Inicio
+   // Tela incial para saber os dados do usuário
+   escreval ("Qual a sua idade?")
+   leia(idade)
+
+   escreval ("Qual seu tempo contribuido?")
+   leia(tempoContribuido)
+   limpatela
+
+    //Condições para saber qual parâmetro da aposentadoria o usuário atende ou não atende
+    // Tela para saber se o usuário atende ou quanto tempo falta para ele atender alguns dos requisitos
+
+   se (idade >= 65) ou (tempoContribuido >= 30) então
+      escreval ("Você se pode aposentar")
+   senao
+      se (tempoContribuido >= 25) e ( idade >= 60) então
+         escreval("você pode se aposentar")
+      senao
+         escreval("Ainda faltam ", 65 - idade," anos para se aposentar por idade",  " ou ", 30 - tempoContribuido, " anos contribuídos, para se aposentar")
+         escreval("Ou ", 60 - idade," anos de idade ", "e faltam", 25 - tempoContribuido, " anos contribuídos para se aposentar")
+      fimse
+   fimse
+
+Fimalgoritmo
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos seguintes intervalos ([0,25], (25,50], (50,75], (75,100]) este valor se encontra. Obviamente se o valor não estiver em nenhum destes intervalos, deverá ser impressa a mensagem “Fora de intervalo”.
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Algoritmo "Intervalos"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor   : Cleberson
+// Descrição   : Programa para saber em qual intervalo o número se encontra
+// Autor(a)    : Joseph e Marcos
+// Data atual  : 18/11/2022
+Var
+   // Seção de Declarações das variáveis
+   valor:real
+
+
+Inicio
+   // Tela para o usuário digitar o número digitado
+
+   escreval("Digite seu numero")
+   leia(valor)
+   limpatela
+
+   // Condição para saber qual intervalo o número atende
+   // Tela para imprimir qual intervalo o número está
+
+   se (valor >= 0) e (valor < 25) entao
+      escreval(valor, " está no intervalo 0 e 25")
+   senao
+      se(valor >= 25) e (valor < 50) entao
+         escreval(valor, " está no intervalo 25 e 50")
+      senao
+         se (valor >= 50) e (valor < 75) entao
+            escreval(valor, " está no intervalo 50 e 75")
+         senao
+            se (valor >= 75) e (valor <= 100) entao
+               escreval(valor, " está no intervalo 75 e 100")
+            senao
+               escreval(valor , " está fora de intervalo")
+
+            fimse
+         fimse
+      fimse
+   fimse
+
+
+
+
+
+
+
+
+
+Fimalgoritmo
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
