@@ -1,0 +1,24 @@
+Determine se um determinado ano lido e bissexto. Sendo que um ano e bissexto se 
+for divisıvel por 400 ou se for divis´ıvel por 4 e nao for divis ˜ ´ıvel por 100. Por exemplo:
+1988, 1992, 1996
+
+. Uma empresa vende o mesmo produto para quatro diferentes estados. Cada estado
+possui uma taxa diferente de imposto sobre o produto (MG 7%; SP 12%; RJ 15%; MS
+8%). Faca um programa em que o usuario entre com o valor e o estado destino do ´
+produto e o programa retorne o preco final do produto acrescido do imposto do estado
+em que ele sera vendido. Se o estado digitado n ´ ao for valido, mostrar uma mensagem ´
+de erro.
+
+Leia a idade e o tempo de servic¸o de um trabalhador e escreva se ele pode ou nao se 
+aposentar. As condicoes para aposentadoria sao:
+• Ter pelo menos 65 anos,
+• Ou ter trabalhado pelo menos 30 anos,
+• Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos.
+
+
+Um comerciante comprou um produto e quer vendê-lo com um lucro de 50% se o valor da compra for menor que R$ 200, caso contrário o lucro será de 30%. Crie um algoritmo que leia o valor da compra e exiba o valor da venda
+
+
+
+
+//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
