@@ -15,3 +15,7 @@ ser 12. Se o número de prestações for maior ou igual a 24, adicione 10% de ju
 valor total, se for maior ou igual a 36, adicione 15% de juros ao valor total.
 
 Sabendo que somente os municípios que possuem mais de 200.000 eleitores têm segundo turno nas eleições para prefeito quando o 1º colocado não obtém mais do que 50% dos votos, crie um algoritmo que leia o nome do município, a quantidade de eleitores e o número de votos do candidato mais votados e informe se terá ou não segundo turno na eleição municipal
+
+
+
+Crie um encunciado e desenvolva um algoreitmo para este, contendo uma fórmula matematica, fisica, finaceira, etc.....
