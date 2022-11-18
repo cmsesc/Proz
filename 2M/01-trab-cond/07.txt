@@ -1,0 +1,17 @@
+Ler dois valores numéricos e apresentar a diferença do maior pelo menor.
+
+Leia a distancia em ˆ Km e a quantidade de litros de gasolina consumidos por um carro
+em um percurso, calcule o consumo em Km/l e escreva uma mensagem de acordo com
+a tabela abaixo:
+CONSUMO (Km/l) MENSAGEM
+menor que 8 Venda o carro!
+entre 8 e 14 Economico! ˆ
+maior que 12 Super economico!
+
+
+Faça um algoritmo que, dado o valor total em reais e o número de prestações
+desejadas, calcule o valor de cada prestação. O número mínimo de prestações deve
+ser 12. Se o número de prestações for maior ou igual a 24, adicione 10% de juros ao
+valor total, se for maior ou igual a 36, adicione 15% de juros ao valor total.
+
+Sabendo que somente os municípios que possuem mais de 200.000 eleitores têm segundo turno nas eleições para prefeito quando o 1º colocado não obtém mais do que 50% dos votos, crie um algoritmo que leia o nome do município, a quantidade de eleitores e o número de votos do candidato mais votados e informe se terá ou não segundo turno na eleição municipal
