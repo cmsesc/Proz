@@ -4,7 +4,7 @@ Algoritmo "Verificador de VOGAL e CONSOANTE"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : 
 // Descrição   : Verifica se a letra digitada e VOGAL ou CONSOANTE
-// Autor(a)    : MATHEUS DE SOUZA PINTO
+// Autor(a)    : Matheus de Souza Pinto
 // Data atual  : 18/11/2022
 Var
    // Seção de Declarações das variáveis
@@ -43,9 +43,77 @@ Inicio
 
 Fimalgoritmo
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 Faça um programa que leia três números e mostre-os em ordem decrescente
+
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Lê 3 numeros e os coloca em ordem decrescente
+// Autor(a)    : Matheus de Souza Pinto
+// Data atual  : 18/11/2022
+Var
+   // Seção de Declarações das variáveis
+   alg1, alg2, alg3, menor, meio, maior: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval("Digite 3 numeros diferentes que iremos coloca-los em")
+   escreval("ordem decrescente")
+   escreval("")
+   escreva("Escolha o primero numero: ")
+   leia(alg1)
+   escreval("")
+   escreva("Escolha o segundo numero: ")
+   leia(alg2)
+   escreval("")
+   escreva("Escolha o terceiro numero: ")
+   leia(alg3)
+   escreval("")
+
+   se (alg1 < alg2) e (alg1 < alg3) entao
+      menor <- alg1
+
+      se alg2 < alg3 entao
+         meio <- alg2
+         maior <- alg3
+      senao
+         meio <- alg3
+         maior <- alg2
+      fimse
+   fimse
+
+   se (alg2 < alg1) e (alg2 < alg3) entao
+      menor <- alg2
+
+      se alg1 < alg3 entao
+         meio <- alg1
+         maior <- alg3
+      senao
+         meio <- alg3
+         maior <-alg1
+      fimse
+   fimse
+
+   se (alg3 < alg2) e (alg3 < alg1) entao
+      menor <- alg3
+
+      se alg1 <- alg2 entao
+         meio <- alg1
+         maior <- alg2
+      senao
+         meio <- alg2
+         maior <- alg1
+      fimse
+   fimse
+   escreval("")
+   escreval("RESULTADO: ", maior," -> ", meio," -> ", menor)
+
+
+Fimalgoritmo
+
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
