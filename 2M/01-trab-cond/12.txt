@@ -21,7 +21,7 @@ Inicio
    escreval(" Seja bem vindo estudante ou professor, este e um simples programa ")
    escreval("que verifica se a letra digitada e CONSOANTE ou VOGAL")
    escreval("")
-   escreval("OBS:(Por favor digite apenas uma letra!")
+   escreval("OBS:(Por favor digite apenas uma letra, e que esteja minuscula!")
    escreval("")
    escreval("")
    escreva("Digite uma letra: ")
@@ -117,9 +117,68 @@ Fimalgoritmo
 
 Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
+
+
+
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
 Faça um script que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
 
+Algoritmo "Registra seu turno"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Verifica em que turno voce estuda
+// Autor(a)    : Matheus de Souza Pinto
+// Data atual  : 18/11/2022
+Var
+   // Seção de Declarações das variáveis
+   ltr, nome:caractere
 
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreva("Primeiramente digite seu nome: ")
+   leia(nome)
+   escreval("")
+   escreval("Tudo bem ", nome,"? Aqui voce devera nos informar em que turno")
+   escreval("voce estuda")
+   escreval("")
+   escreval("Escolha uma das opções a baixo: ")
+   escreval("")
+   escreval("|----------------|")
+   escreval("| M - Matutino   |")
+   escreval("| V - Vespertino |")
+   escreval("| N - Noturno    |")
+   escreval("|----------------|")
+   escreval("")
+   escreval("(OBS: Escreva em letra MAIUSCULA)")
+   escreval("")
+   escreva("Digite uma opção: ")
+   leia(ltr)
+   escreval("")
+   enquanto (ltr <> "M") e (ltr <> "V") e (ltr <> "N") faca
+      escreval("!!  OPÇÃO INVALIDA   !!")
+      escreval("!! ESCOLHA NOVAMENTE !!")
+      escreval("")
+      escreva("Digite uma opção: ")
+      leia(ltr)
+      escreval("")
+   fimenquanto
+fimescolha
+escolha ltr
+
+caso "M"
+   escreval("BOM DIA!!")
+   escreval("Foi registrado que o aluno ", nome," esta no turno MATUTINO")
+caso "V"
+   escreval("BOA TARDE!!")
+   escreval("Foi registrado que o aluno ", nome," esta no turno VESPERINO")
+caso "N"
+   escreval("BOA NOITE!!")
+   escreval("Foi registrado que o aluno ", nome," esta no turno NOTURNO")
+fimescolha
+
+
+Fimalgoritmo
 
 
 //Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
