@@ -1,20 +1,162 @@
 
-Escreva um algoritmo em PORTUGOL que leia um número e o imprima caso ele seja
+01.Escreva um algoritmo em PORTUGOL que leia um número e o imprima caso ele seja
 maior que 20
 
-Construa um algoritmo em PORTUGOL que leia dois valores numéricos inteiros e
+02.Construa um algoritmo em PORTUGOL que leia dois valores numéricos inteiros e
 efetue a adição; caso o resultado seja maior que 10, apresentá-lo.
 
-Construir um algoritmo em PORTUGOL que leia dois números e efetue a adição.
+03.Construir um algoritmo em PORTUGOL que leia dois números e efetue a adição.
 Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele
 mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado
 subtraindo-se 5.
 
-Faca um programa que calcule e mostre a area de um trapezio. Sabe-se que: ´
+04.Faca um programa que calcule e mostre a area de um trapezio. Sabe-se que: ´
 A =(basemaior + basemenor) ∗ altura/2
 Lembre-se a base maior e a base menor devem ser numeros maiores que zero.
 
 
+//RESPOSTA:::::::::::::::::::::::::::::::::
 
+Algoritmo "semnome"
+//
+//
+// Descrição   : O programa faz adição e apresenta valores, também calcula área do trapézio
+// Autor(a)    : Carlos Eduardo e Douglas Gomes
+// Data atual  : 18/11/2022
+Var
+   // Seção de Declarações das variáveis
+   numeR, a, b, soma, h, BB, areaTrap: real
+   looP, meNNu: inteiro
 
-//Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   //retornar ao menu
+   enquanto (meNNu <> 5) faca
+
+      //limpar tela
+      timer(0)
+      limpatela()
+
+      //menu para entrar nas atividades
+      escreval("MENU PRINCIPAL - RESOLUÇÃO")
+      escreval("")
+      escreval("Digite <1> para ver a QUESTÃO 1")
+      escreval("Digite <2> para ver a QUESTÃO 2")
+      escreval("Digite <3> para ver a QUESTÃO 3")
+      escreval("Digite <4> para ver a QUESTÃO 4")
+      escreval("Digite <5> para SAIR")
+      leia(meNNu)
+      escolha(meNNu)
+
+      caso 1
+         // primeira questão: numero maior que 20
+         limpatela()
+         escreval("")
+         escreval("NÚMERO MAIOR OU MENOR QUE 20")
+         escreval("")
+         escreval("Insira um número.")
+         leia(numeR)
+         se (numeR>20) entao
+            escreval(numeR," - este número é maior que 20.")
+            escreval("")
+         senao
+            se (numeR<20) entao
+               escreval(numeR," - este número é menor que 20.")
+            fimse
+         fimse
+         timer(300)
+         escreval("")
+         escreval("")
+         escreval("")
+         escreval("Pressione <ENTER> para voltar ao menu.")
+         leia(looP)
+         timer(0)
+
+      caso 2
+         //segunda questão: adição, se maior que 10 apresentá-lo
+         limpatela()
+         escreval("")
+         escreval("ADIÇÃO")
+         escreval("")
+         escreval("Insira um valor.")
+         leia(a)
+         escreval("Insira outro valor")
+         leia(b)
+         soma<- a+b
+         se (soma> 10) entao
+            escreval("A soma é maior que 10 e igual a:",soma)
+         senao
+            se (soma< 10) entao
+               escreval("A soma é menor que 10 e igual a:",soma)
+            fimse
+         fimse
+         timer(300)
+         escreval("")
+         escreval("")
+         escreval("")
+         escreval("Pressione <ENTER> para voltar ao menu.")
+         leia(looP)
+         timer(0)
+
+      caso 3
+         //terceira questão: adição, se maior que 20 somar 8, se menor que 20 subtrai 5
+         limpatela()
+         escreval("")
+         escreval("ADIÇÃO DE VALORES(somando à 8 ou subtraindo 5")
+         escreval("")
+         escreval("Insira um valor.")
+         leia(a)
+         escreval("Insira outro valor")
+         leia(b)
+         soma<- a+b
+         se (soma > 20) entao
+            soma <- (soma+8)
+            escreval("A soma é maior que 20, e mais 8 fica igual a:",soma)
+         senao
+            se (soma <= 20) entao
+               soma <- (soma-5)
+               escreval("A soma é menor que 20, e menos 5 fica e igual a:",soma)
+            fimse
+         fimse
+         timer(300)
+         escreval("")
+         escreval("")
+         escreval("")
+         escreval("Pressione <ENTER> para voltar ao menu.")
+         leia(looP)
+         timer(0)
+
+      caso 4
+         //quarta questão: calcular a área do trapezio
+         limpatela()
+         escreval("")
+         escreval("Cálculo da área do TRAPÉZIO")
+         escreval("             ___________    ")
+         escreval("            /           \   ")
+         escreval("           /             \  ")
+         escreval("          /_______________\ ")
+         escreval("")
+         escreval("Insira o valor da BASE MAIOR")
+         leia(BB)
+         escreval("Insira o valor da BASE MENOR")
+         leia(b)
+         escreval("Insira o valor da ALTURA")
+         leia(h)
+         areaTrap <- ((BB+b)*h)/2
+         escreval("")
+         escreval("A área do TRAPEZIO é: ",areaTrap)
+         timer(300)
+         escreval("")
+         escreval("")
+         escreval("")
+         escreval("Pressione <ENTER> para voltar ao menu.")
+         leia(looP)
+         timer(0)
+
+      fimescolha
+   fimenquanto
+   escreval("")
+   escreval("Obrigado por utilizar este programa")
+   escreval("Pressione <ESC> para sair.")
+Fimalgoritmo
