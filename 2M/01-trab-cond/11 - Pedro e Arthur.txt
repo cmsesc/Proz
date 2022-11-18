@@ -1,13 +1,165 @@
 Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante
 
+Algoritmo "semnome"
+// DETERMINAR VOGAIS E OU CONSOANTES
+Var
+// ENTRADA: LETRA
+// PROCESSAMENTO: LETRA
+// SAÍDA: VOGAL , CONSOANTE
+
+letra : caracter
+vogal, consoante: LOGICO
+
+
+
+Inicio
+escreval ("digite uma letra")
+leia (letra)
+se (letra= "A") ou (letra="E") ou (letra= "I") ou (letra= "O") ou (letra="U") entao
+escreval (letra,"=VOGAL")
+senao (letra= "B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z")
+escreval (letra,"=COSOANTE")
+
+
+
+
 Faça um programa que leia três números e mostre-os em ordem decrescente
+
+Algoritmo "semnome"
+// ALGORITIMO PARA DEFINIR ORDEM DE NUMEROS DECRESCENTE
+Var
+// ENTRADA
+// PROCESSAMENTO
+// SAÍDA
+
+numero1, numero2, numero3: inteiro
+maior, menor, meio: inteiro
+
+
+Inicio
+escreval ("digite o primeiro numero")
+leia (numero1)
+escreval ("digite o segundo  numero")
+leia (numero2)
+escreval ("digite o terceiro numero")
+leia (numero3)
+
+se (numero1 < numero2) e (numero1 < numero2) entao
+     menor <- numero1
+     se (numero2 < numero3) entao
+       meio <- numero2
+        maior  <- numero3
+         senao
+         meio <- numero3
+         maior <- numero2
+         fimse
+fimse
+se (numero2 < numero1) e (numero2 < numero3) entao
+   menor <- numero2
+   se numero1 < numero3 entao
+       meio <-  numero3
+        maior <-numero1
+       fimse
+fimse
+se (numero3 < numero1) e (numero3 < numero2) entao
+   menor <- numero3
+   se numero1 < numero2 entao
+   meio <- numero1
+   maior <- numero2
+   senao
+    meio <- numero2
+     maior <- numero1
+     fimse
+fimse
+
+escreval (maior,meio,menor)
+
+Fimalgoritmo
 
 Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
+Algoritmo "semnome"
+// DETERMINE SE UMA DATA É VALIDA
+Var
+// ENTRADA: dia, mes ano
+// PROCESSAMENTO: data
+// SAIDA: valido / invalido
+dd, mm, aaaa : inteiro
+
+Inicio
+escreval ("DIGITE UM DIA")
+leia (dd)
+escreval ("DIGITE UM MES")
+leia (mm)
+escreval ("DIGITE UM ANO")
+leia (aaaa)
+se (dd > 31) ou (mm > 12) entao
+escreval ("data invalida")
+senao
+escreval ("data valida")
+fimse
+
+Fimalgoritmo
+
 12
 Faça um script que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+
+Algoritmo "semnome"
+// TURNO QUE VOCE ESTUDA
+Var
+// ENTRADA: TURNO
+// PROCESSAMENTO: TURNO
+// SAIDA: BOM DIA, BOA TARDE, BOA NOITE
+turno:  caracter
+
+Inicio
+escreval ("Em qual turno você estuda?")
+escreval ("Obs; ULTILIZE LETRAS MAIUSCULAS")
+escreval ("Dgite M-matutino ou V-Vespertino ou N-Noturno")
+leia (turno)
+
+Se (turno = "M") entao
+escreval ("Bom Dia")
+
+senao
+se (turno= "V") entao
+escreval ("Boa Tarde")
+
+senao
+se(turno= "N") entao
+escreval("Boa Noite")
+
+fimse
+fimse
+fimse
+
+
+Fimalgoritmo
 
 
 
 
 //Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+
+Algoritmo "semnome"
+// FORMULA MATEMATICA
+Var
+// ENTRADA
+// PROCESSAMENTO
+// SAIDA
+
+altura , peso: real
+imc : real
+
+
+Inicio
+Escreval ("CALCULE SEU IMC, SEU INDICE DE MASSA CORPORAL")
+escreval ("digite sua altura")
+ leia (altura)
+ escreval ("digite seu peso")
+ leia (peso)
+ imc<-peso/altura
+ escreval (" seu imc é", imc)
+
+
+Fimalgoritmo
