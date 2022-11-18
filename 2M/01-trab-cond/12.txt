@@ -117,6 +117,41 @@ Fimalgoritmo
 
 Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
+Algoritmo "Digita uma data e avalia se a mesma e uma data válida"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Digita uma data e avalia se a mesma e válida
+// Autor(a)    : Matheus de Souza Pinto
+// Data atual  : 18/11/2022
+Var
+   // Seção de Declarações das variáveis
+   Dia,Mes,Ano: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval("Digite uma data e iremos verificar se esta data e VÁLIDA ou INVÁLIDA")
+   escreval("")
+   escreva("Dia: ")
+   leia(Dia)
+   limpatela
+   escreva(Dia,"/ Mes: ")
+   leia(Mes)
+   limpatela
+   escreva(Dia,"/", Mes,"/Ano: ")
+   leia(Ano)
+   limpatela
+   escreval(Dia,"/", Mes,"/", Ano)
+   escreval("")
+   escreval("VERIFICANDO...")
+   escreval("")
+   se (Dia > 31) ou (Dia < 1) ou (Mes < 1) ou (Mes > 12) ou (Ano < 1000) ou (Ano > 9999) entao
+   escreval("Esta data e INVÁLIDA")
+   senao
+   escreval("Esta data e VÁLIDA")
+FIMSE
+
+Fimalgoritmo
+
 
 
 
