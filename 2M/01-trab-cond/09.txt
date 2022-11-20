@@ -11,3 +11,190 @@ Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem
 
 
 Sabendo que somente os municípios que possuem mais de 200.000 eleitores têm segundo turno nas eleições para prefeito quando o 1º colocado não obtém mais do que 50% dos votos, crie um algoritmo que leia o nome do município, a quantidade de eleitores e o número de votos do candidato mais votados e informe se terá ou não segundo turno na eleição municipal
+
+Algoritmo "Atividade em dupla(4 exercicios)"
+//
+// Descrição   : Atividade em dupla(4 exercicios)
+// Autor(a)    : Gabriel Mendes Silva e Vitor
+
+Var// Organiza 3 números em ordem crescente
+   num1,num2,num3:real
+   numa,numb,numc:real
+
+
+// Verifica se o trabalhador atende aos critérios para se aposentar
+   nome:caractere
+   idade,temp:inteiro
+
+// Verifica em qual intervalo o numero digitado esta presente
+   valor:real
+
+
+// Verifica se o município haverá segundo turno
+   nome1,nome2:caractere
+   eleitores,votos,porcentagem:real
+
+
+
+
+inicio// Organiza 3 números em ordem crescente
+
+   escreva ("Escreva o Primeiro número:")
+   leia (num1)
+   escreva ("Escreva o Segundo número:")
+   leia (num2)
+   escreva ("Escreva o Terceiro número:")
+   leia (num3)
+   se (num1 < num2) e (num1 < num3)  então
+      numa <- num1
+   fimse
+   se (num2 < num1) e (num2 < num3) então
+      numa <- num2
+   fimse
+   se (num3 < num2) e (num3 < num1) então
+      numa <- num3
+   fimse
+   se (num1 >num2) e (num1 > num3) então
+      numc <- num1
+   fimse
+   se (num2 > num1) e (num2 > num3) então
+      numc <- num2
+   fimse
+   se (num3 > num2) e (num3 > num1) então
+      numc <- num3
+   fimse
+   se (num1 > numa) e (num1 < numc) então
+      numb <- num1
+   senao
+      se (num2 > numa) e (num2 < numc) então
+         numb <- num2
+      senao
+         se (num3 > numa) e (num3 < numc) então
+            numb <- num3
+         senao
+            se (num1 < numc) e (num1 = numb) então
+               numa <- num1
+            fimse
+         fimse
+      fimse
+   fimse
+   escreval
+   escreval (numa , numb , numc)
+   escreval
+
+
+Fimalgoritmo
+//--------------------------------------------------------------------
+//--------------------------------------------------------------------
+
+inicio// Verifica se o trabalhador atende aos critérios para se aposentar
+
+   escreva ("Qual nome do trabalhador:")
+   leia (nome)
+   escreva ("Qual a idade do trabalhador:")
+   leia (idade)
+   escreva ("Qual o tempo de contribuição do trabalhador:")
+   leia (temp)
+   escreval
+   se (idade >= 60) e (temp >= 25) então
+      escreval ("O ",nome," possui",idade," anos de idade e trabalhou durante",temp," anos, portanto ele atende aos critérios da aposentadoria")
+      escreval ("veja a seguir os critérios:")
+      escreval
+      escreval ("• Ter pelo menos 65 anos de idade;")
+      escreval ("• Ou ter trabalhado pelo menos 30 anos;")
+      escreval ("• Ou ter pelo menos 60 anos e trabalhado pelo menos 25.")
+      escreval
+   senao
+      se (idade >= 65) então
+         escreval ("O ",nome," possui",idade," anos de idade, portanto ele atende ao critério da aposentadoria")
+         escreval ("veja a seguir os critérios:")
+         escreval
+         escreval ("• Ter pelo menos 65 anos de idade;")
+         escreval ("• Ou ter trabalhado pelo menos 30 anos;")
+         escreval ("• Ou ter pelo menos 60 anos e trabalhado pelo menos 25.")
+         escreval
+      senao
+         se (temp >= 30) então
+            escreval ("O ",nome," trabalhou durante",temp," anos, portanto ele atende ao critério da aposentadoria")
+            escreval ("veja a seguir os critérios:")]
+            escreval
+            escreval ("• Ter pelo menos 65 anos de idade;")
+            escreval ("• Ou ter trabalhado pelo menos 30 anos;")
+            escreval ("• Ou ter pelo menos 60 anos e trabalhado pelo menos 25.")
+            escreval
+         senao
+            escreval
+            escreval ("O ",nome," não atende a nenhum critério da aposentadoria, veja a seguir os critérios:")
+         fimse
+         escreval
+         escreval ("• Ter pelo menos 65 anos de idade;")
+         escreval ("• Ou ter trabalhado pelo menos 30 anos;")
+         escreval ("• Ou ter pelo menos 60 anos e trabalhado pelo menos 25.")
+         escreval
+      fimse
+   fimse
+
+
+Fimalgoritmo
+//--------------------------------------------------------------------
+//--------------------------------------------------------------------
+
+inicio// Verifica em qual intervalo o numero digitado esta presente
+
+   escreva("Qual o número a  ser verificado:")
+   leia (valor)
+   escreval
+   se (valor >= 0) e (valor <= 25) então
+      escreval ("O número",valor," está presente no intervalo [0,25]")
+   senao
+      se (valor >= 25) e (valor <=50) então
+         escreval ("O número",valor<" está presente no intervalo [25,50]")
+      senao
+         se (valor >= 50) e (valor <=75) então
+            escreval ("O número",valor," está presenta no intervalo [50,75]")
+         senao
+            se (valor >= 75) e (valor <= 100) então
+               escreval ("O número",valor," está presente no intervalo [75,100]")
+            senao
+               se (valor > 100) ou (valor < 0) então
+                  escreval
+                  escreval ("O número",valor," está fora dos intervalos !!!:c")
+                  escreval
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+
+
+Fimalgoritmo
+//--------------------------------------------------------------------
+//--------------------------------------------------------------------
+
+inicio// Verifica se o município haverá segundo turno
+
+   escreval
+   escreva ("Qual o nome do município? ")
+   leia (nome1)
+   escreva ("Qual a quantidade de eleitores? ")
+   leia (eleitores)
+   escreva ("Qual o nome do candidato mais votado? ")
+   leia (nome2)
+   escreva ("Qual o número de votos do candidato mais votado? ")
+   leia (votos)
+   escreval
+   se (eleitores <= 200000) entao
+      faca (votos* 100 / eleitores) então
+      porcentagem <- (votos* 100 / eleitores)
+      escreval
+      escreva ("O município de ",nome1," não possui mais de 200.000 eleitores portanto não haverá segundo turno e o candidato ",nome2," foi eleito com",porcentagem,"% dos votos")
+   senão
+      porcentagem <- (votos* 100 / eleitores)
+      se (votos > eleitores*50/100) então
+         escreval
+         escreva ("No município de ",nome1," não haverá segundo turno,pois o ",nome2," foi eleito com",porcentagem,"% dos votos")
+      senao
+         escreva ("No município de ",nome1," haverá segundo turno,pois o candidato mais votado ",nome2," obteve ",porcentagem,"% dos votos")
+      fimse
+   fimse
+Fimalgoritmo
