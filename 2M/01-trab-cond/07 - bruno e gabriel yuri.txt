@@ -223,3 +223,5 @@ Inicio
       fimescolha
    fimenquanto
 Fimalgoritmo
+
+Bruno e Gabriel Yuri
