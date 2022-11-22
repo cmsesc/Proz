@@ -215,5 +215,64 @@ fimescolha
 
 Fimalgoritmo
 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 //Crie um enunciado e elabore um algoritmo para o mesmo. Esse deve ter uma formula matematica, fisica, financeira, etc.
+
+Algoritmo "Quantos anos voce tem hein????" 4
+//Nome aluno: Matheus de Souza Pinto
+//descrição: Este programa calcula sua idade e diz se voce ja fez aniversario ou nao
+
+Var
+   somaAno,somaAno2 , somaDia, somaMes, anoAtual, anoNasc, mesAtual, mesNasc, diaAtual, diaNasc: real
+   nome: caractere
+
+Inicio
+   escreva("Ola, antes de tudo, digite seu nome: ")
+   leia(nome)
+   limpatela
+   escreval("Nesse programa vamos calcular sua idade com base")
+   escreval("na sua data de aniversario e a data atual")
+   escreval("Primeiramente nos informe sua DATA DE NASCIMENTO ", nome)
+   escreval("")
+   escreval("DATA DE NASCIMENTO: ")
+   escreval("Dia:")
+   leia(diaNasc)
+   limpatela
+   escreval(diaNasc,"/ Mes :")
+   leia(mesNasc)
+   limpatela
+   escreval(diaNasc,"/",mesNasc,"/ Ano:")
+   leia(anoNasc)
+   limpatela
+   escreval(diaNasc,"/",mesNasc,"/",anoNasc)
+   escreval("")
+   escreval("Agora que sabemos sua DATA DE NASCIMENTO...")
+   escreval("Voce deve escrever a DATA ATUAL:")
+   escreval("Dia Atual:")
+   leia(diaAtual)
+   limpatela
+   escreval(diaAtual,"/ Mes Atual:")
+   leia(mesAtual)
+   limpatela
+   escreval(diaAtual,"/",mesAtual,"/ Ano Atual:")
+   leia(anoAtual)
+   limpatela
+   escreval(diaAtual,"/",mesAtual,"/",anoAtual)
+   escreval("")
+   somaAno <- ((anoAtual * 365) - (anoNasc * 365))
+   somaAno2 <- (somaAno - 365)/ 365
+
+   se (mesAtual = mesNasc) e (diaAtual >= diaNasc) entao
+      escreval("Parabens ", nome," , voce fez ja aniversario esse ano!")
+      escreval("Voce tem ", somaAno2 + 1," anos")
+   senao
+      se mesAtual > mesNasc entao
+         escreval("Parabens ", nome," ,voce ja fez aniversario esse ano!")
+         escreval("Voce tem ", somaAno2 + 1," anos")
+      senao
+         escreval("Voce ainda nao vez aniversario esse ano ", nome )
+         escreval("Voce tem ", somaAno2 + 1," anos")
+      fimse
+   fimse
+Fimalgoritmo
