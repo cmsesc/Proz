@@ -1,3 +1,7 @@
+ALUNO: Matheus de Souza Pinto
+TURMA: 2M
+
+
 Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante
 
 Algoritmo "Verificador de VOGAL e CONSOANTE"
@@ -249,13 +253,14 @@ Inicio
    escreval("")
    escreval("Agora que sabemos sua DATA DE NASCIMENTO...")
    escreval("Voce deve escrever a DATA ATUAL:")
-   escreval("Dia Atual:")
+   escreval("")
+   escreva("Dia Atual:")
    leia(diaAtual)
    limpatela
-   escreval(diaAtual,"/ Mes Atual:")
+   escreva(diaAtual,"/ Mes Atual:")
    leia(mesAtual)
    limpatela
-   escreval(diaAtual,"/",mesAtual,"/ Ano Atual:")
+   escreva(diaAtual,"/",mesAtual,"/ Ano Atual:")
    leia(anoAtual)
    limpatela
    escreval(diaAtual,"/",mesAtual,"/",anoAtual)
@@ -264,15 +269,15 @@ Inicio
    somaAno2 <- (somaAno - 365)/ 365
 
    se (mesAtual = mesNasc) e (diaAtual >= diaNasc) entao
-      escreval("Parabens ", nome," , voce fez ja aniversario esse ano!")
+      escreval("Parabens ", nome," , voce ja fez aniversario esse ano!")
       escreval("Voce tem ", somaAno2 + 1," anos")
    senao
       se mesAtual > mesNasc entao
          escreval("Parabens ", nome," ,voce ja fez aniversario esse ano!")
          escreval("Voce tem ", somaAno2 + 1," anos")
       senao
-         escreval("Voce ainda nao vez aniversario esse ano ", nome )
-         escreval("Voce tem ", somaAno2 + 1," anos")
+         escreval("Voce ainda nao fez aniversario esse ano ", nome )
+         escreval("Voce tem ", somaAno2 ," anos")
       fimse
    fimse
 Fimalgoritmo
