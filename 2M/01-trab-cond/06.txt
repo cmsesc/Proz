@@ -73,3 +73,31 @@ Inicio
       FIMSE
    FIMSE
 Fimalgoritmo
+
+
+algoritmo "bissexto"
+var
+   ano : inteiro
+
+inicio
+// Seção de Comandos
+   escreva("Ano? ")
+   leia(ano)
+   
+   se (ano mod 400 = 0) ou ((ano mod 4 = 0) e (ano mod 100 <> 0)) entao
+      escreval(ano, " é bisexto!")
+   fimse
+   
+fimalgoritmo
+
+algoritmo "farenheitCelsius"
+var
+ celsius , farenheit  : real
+
+inicio
+// Seção de Comandos 
+ escreva("Farenheit? ")
+ leia(farenheit)
+ celsius <- 5 * (farenheit - 32) / 9
+ escreval("celsius = ", celsius)
+fimalgoritmo
