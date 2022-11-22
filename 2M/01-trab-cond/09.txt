@@ -15,7 +15,7 @@ Sabendo que somente os municípios que possuem mais de 200.000 eleitores têm se
 Algoritmo "Atividade em dupla(4 exercicios)"
 //
 // Descrição   : Atividade em dupla(4 exercicios)
-// Autor(a)    : Gabriel Mendes Silva e Vitor
+// Autor(a)    : Gabriel Mendes Silva e Vitor Sousa
 
 Var// Organiza 3 números em ordem crescente
    num1,num2,num3:real
@@ -192,9 +192,9 @@ inicio// Verifica se o município haverá segundo turno
       porcentagem <- (votos* 100 / eleitores)
       se (votos > eleitores*50/100) então
          escreval
-         escreva ("No município de ",nome1," não haverá segundo turno,pois o ",nome2," foi eleito com",porcentagem,"% dos votos")
+         escreva ("No município de ",nome1," não haverá segundo turno,pois o ",nome2," foi eleito com ",porcentagem:2:1,"% dos votos")
       senao
-         escreva ("No município de ",nome1," haverá segundo turno,pois o candidato mais votado ",nome2," obteve ",porcentagem,"% dos votos")
+         escreva ("No município de ",nome1," haverá segundo turno,pois o candidato mais votado ",nome2," obteve ",porcentagem:2:1,"% dos votos")
       fimse
    fimse
 Fimalgoritmo
