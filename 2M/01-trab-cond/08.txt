@@ -72,6 +72,6 @@ escreval("A media dos clientes: R$", divisao)
 escreval("NOME DO CLIENTE 1:", nome1, " R$",valor1)
 escreval("NOME DO CLIENTE 2:", nome2, " R$",valor2)
 
-Gabriel
+Gabriel Magalhães
 
 Fimalgoritmo
