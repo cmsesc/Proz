@@ -102,3 +102,66 @@ Fimalgoritmo
 
 
 ------------------------------------------------------------------------------------------------------------------
+Algoritmo "luiz e diego"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis 
+
+   Numero,Resto : real
+   ResulOne, ResulTwo , ResulThree : real
+
+Inicio
+
+// Esse algoritmo informa se o número desejado é divisivel por 10, 5 e 2.
+
+
+   escreva(" Insira o número desejado: ")
+   leia(numero)
+   se(( numero ) mod 10 = 0) e ((numero ) mod 5 = 0 ) e ((numero) mod 2 = 0 ) entao
+   escreval( numero, " , é divisivel por 10, 5 e 2 " )
+   
+   fimse
+   
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/11/2022
+Var
+// Seção de Declarações das variáveis 
+
+   A,B : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+   escreva(" Insira o valor de A: ")
+   leia ( A )
+   escreva(" Insira o valor de B: ")
+   leia ( B )
+
+   se ( A < B ) entao
+   A <- A^2
+   escreval(" Valor de A é: " , A :5:2 )
+   B <- RaizQ ( B )
+   escreva(" A raiz de B é: " , B :5:2 )
+
+   senao
+   B <- B^2
+   escreval (" Valor de B é: " , B :5:2 )
+   A <- RaizQ ( A )
+   escreva(" A raiz de A é: " , A :5:2 )
+   fimse
+
+
+Fimalgoritmo
+
+
+Fimalgoritmo
